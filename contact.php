@@ -1,44 +1,18 @@
 <?php
-
-// configure
-$from = 'Demo contact form <demo@domain.com>';
-$sendTo = 'Demo contact form <demo@domain.com>';
-$subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
-$okMessage = 'Contact form succesfully submitted. Thank you, I will get back to you soon!';
-$errorMessage = 'There was an error while submitting the form. Please try again later';
-
-// let's do the sending
-
-try
-{
-    $emailText = "You have new message from contact form\n=============================\n";
-
-    foreach ($_POST as $key => $value) {
-
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
-        }
-    }
-
-    mail($sendTo, $subject, $emailText, "From: " . $from);
-
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
-}
-catch (\Exception $e)
-{
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-}
-
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
-    
-    header('Content-Type: application/json');
-    
-    echo $encoded;
-}
-else {
-    echo $responseArray['message'];
-}
-
+    //$to = "contactar@mm-magrinya.cat"; 
+    $to = "rubinho6@gmail.com"; 
+    $from = $_REQUEST['email']; 
+    $name = $_REQUEST['name']; 
+    $headers = "From: $from"; 
+    $subject = "Has rebut un nou contacte desde la WEB"; 
+    $fields = array(); 
+    $fields{"name"} = "Nom"; 
+    $fields{"surname"} = "Cognoms"; 
+    $fields{"email"} = "Email"; 
+    $fields{"phone"} = "Telèfon"; 
+    $fields{"message"} = "Missatge";
+    $body = "Contacte:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
+    $send = mail($to, $subject, $body, $headers);
+    error_log("Send result :" + $send);
+    error_log($body);
 ?>

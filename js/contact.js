@@ -1,26 +1,28 @@
 $(function () {
 
-    $("#contact-form").submit(function () {
-
-        var url = "contact.php"; 
+    $("#btnSend").click(function () {
+        alert('here:');
 
         $.ajax({
-            type: "POST",
-            url: url,
-            data: $(this).serialize(), 
-            success: function (data)
-            {
-                var messageAlert = 'alert-' + data.type;
-                var messageText = data.message;
-
-                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                if (messageAlert && messageText) {
-                    $('#contact-form').find('.messages').html(alertBox);
-                    $('#contact-form')[0].reset();
+                type:"POST",
+                data: $("#contact-form").serialize(),
+                url:"contact.php",
+                success: function() {
+                    alert('success');
+                    $('#contact-form :input').attr('disabled', 'disabled');
+                    $('.contacta').fadeTo( "slow", 0.15, function() {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor','default');
+                        $('#success').fadeIn();
+                    });
+                },
+                error: function() {
+                    alert('error');
+                    $('.contacta').fadeTo( "slow", 0.15, function() {
+                        $('#error').fadeIn();
+                    });
                 }
-            }
-        });
-        return false; 
+            });
     });
 
 });

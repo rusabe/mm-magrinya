@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>MM-Magrinya instaladors Barcelona</title>
+    <title>MM-Magrinya instal&middot;ladors Barcelona</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -167,7 +167,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1>Contacti amb nosaltres</h1>
                     <p class="lead">Si us plau indiqui'ns les seves dades:</p>
-                    <form id="contact-form" method="post" action="contact.php" role="form">
+                    <form id="contact-form" method="post" role="form">
                         <div class="messages"></div>
                         <div class="controls">
                             <div class="row">
@@ -197,7 +197,7 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input type="submit" class="btn btn-success btn-send" value="Enviar">
+                                    <input type="button" class="btn btn-success btn-send" id="btnSend" name="btnSend" value="Enviar">
                                 </div>
 
                                 <div class="col-md-12">
@@ -208,6 +208,17 @@
                     </form>
                 </div>
             </div>
+        </div>
+        <div id="success">
+          <span>
+            <p>Dades enviades correctament. Ens possarem en contace tan aviat com ens sigui possible.</p>
+          </span>
+        </div>
+
+        <div id="error">
+          <span>
+            <p>S'ha produ&iuml;t algun error. Si us plau, probi-ho m&eacute;s tard.</p>
+          </span>
         </div>
     </section>
 
@@ -228,5 +239,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
