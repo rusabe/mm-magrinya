@@ -145,18 +145,16 @@
           <h2>Dom&ograve;tica</h2>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-            <div class="row">
-        <div class="col-lg-4">
+      <div class="row">
+        <div class="col-lg-4 centered">
           <img class="img-circle" src="images/services/service-7.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Aigua</h2>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 centered">
           <img class="img-circle" src="images/services/service-8.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Gas</h2>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/services/service-4.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Calefacci&oacute;</h2>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -167,20 +165,21 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1>Contacti amb nosaltres</h1>
                     <p class="lead">Si us plau indiqui'ns les seves dades:</p>
-                    <form id="contact-form" method="post" role="form">
+                    <form id="contact-form" name="contact-form" method="post" role="form">
                         <div class="messages"></div>
                         <div class="controls">
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="form_name">Nom *</label>
-                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Si us plau entri el seu nom *" required="required">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Si us plau entri el seu nom *" required>
                                 </div>
 
                                 <div class="col-md-6">
                                     <label for="form_lastname">Cognoms</label>
                                     <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Si us plau entri els seus cognoms">
                                 </div>
-
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                     <label for="form_email">Email *</label>
                                     <input id="form_email" type="email" name="email" class="form-control" placeholder="Si us plau entri el seu email *" required="required">
@@ -190,35 +189,38 @@
                                     <label for="form_phone">Tel&egrave;fon</label>
                                     <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Si us plau entri el tel&egrave;fon">
                                 </div>
-
+                            </div>
+                            <div class="row">
                                 <div class="col-md-12">
                                     <label for="form_message">Missatge</label>
                                     <textarea id="form_message" name="message" class="form-control" placeholder="Si us plau entri el seu missatge" rows="4"></textarea>
                                 </div>
-
+                            </div>
+                            <div class="row">
                                 <div class="col-md-12">
                                     <input type="button" class="btn btn-success btn-send" id="btnSend" name="btnSend" value="Enviar">
+                                    <div id="success">
+                                      <span>
+                                        <p>Dades enviades correctament. Ens possarem en contace tan aviat com ens sigui possible.</p>
+                                      </span>
+                                    </div>
+                                    <div id="error">
+                                      <span>
+                                        <p>S'ha produ&iuml;t algun error. Si us plau, probi-ho m&eacute;s tard.</p>
+                                      </span>
+                                    </div>
                                 </div>
-
+                            </div>
+                            <div class="row">
                                 <div class="col-md-12">
                                     <p class="text-muted"><strong>*</strong> Aquests camps s&oacute;n obligatoris.</p>
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </form>
                 </div>
             </div>
-        </div>
-        <div id="success">
-          <span>
-            <p>Dades enviades correctament. Ens possarem en contace tan aviat com ens sigui possible.</p>
-          </span>
-        </div>
-
-        <div id="error">
-          <span>
-            <p>S'ha produ&iuml;t algun error. Si us plau, probi-ho m&eacute;s tard.</p>
-          </span>
         </div>
     </section>
 
@@ -240,5 +242,9 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_ca.js"></script>
+
+
   </body>
 </html>
