@@ -48,6 +48,7 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Inici</a></li>
+                <li><a href="#services">Serveis</a></li>
                 <li><a href="#contacta">Contacta</a></li>
               </ul>
             </div>
@@ -74,7 +75,7 @@
             <div class="carousel-caption">
               <h1>M&amp;M Instal&middot;lacions</h1>
               <p>Nasqu&egrave; de la uni&oacute; de professionals amb l'objectiu d'agrupar experi&egrave;ncies en sectors diferents per tal de d'oferir un servei integral i de qualitat als nostres clients.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Contacta</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#contacta" role="button">Contacta</a></p>
             </div>
           </div>
         </div>
@@ -84,7 +85,7 @@
             <div class="carousel-caption">
               <h1>M&amp;M Instal&middot;lacions</h1>
               <p>Treballem amb les primeres marques utilitzant els materials adequats per tal d'obtenir la m&eacute;s alta fiabilitat en les nostres instal&middot;lacions.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Contacta</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#contacta" role="button">Contacta</a></p>
             </div>
           </div>
         </div>
@@ -94,7 +95,7 @@
             <div class="carousel-caption">
               <h1>M&amp;M Instal&middot;lacions</h1>
               <p>Estem especialitzats en els sectors relacionats amb l'arquitectura i la decoraci&oacute;. Implementem instal&middot;lacions estandaritzades i donem solucions a les que no ho son.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Contacta</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#contacta" role="button">Contacta</a></p>
             </div>
           </div>
         </div>
@@ -109,61 +110,65 @@
       </a>
     </div><!-- /.carousel -->
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/services/service-1.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Control d'accesos</h2>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/services/service-2.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Video porters</h2>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/services/service-3.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Climatitzaci&oacute;</h2>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/services/service-4.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Calefacci&oacute;</h2>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/services/service-5.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Electricitat</h2>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/services/service-6.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Dom&ograve;tica</h2>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-      <div class="row">
-        <div class="col-lg-4 centered">
-          <img class="img-circle" src="images/services/service-7.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Aigua</h2>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 centered">
-          <img class="img-circle" src="images/services/service-8.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Gas</h2>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
+    <div class="jumbotron">
+        <h1>A qui ens dirigim</h1>
+        <p class="lead">Promotors d'obres, despatxos d'arquitectura, dissenyadors, administrador de finques</p>
+        <p><a class="btn btn-lg btn-primary" href="#contacta" role="button">Contacta</a></p>
+    </div>
+    <section id="services">
+        <div class="jumbotron services">
+            <h1>Serveis</h1>
+        </div>
+        <div class="container marketing">            
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-circle" src="images/services/service-1.jpg" alt="Generic placeholder image" width="140" height="140">
+              <h4>Control d'accesos</h4>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-circle" src="images/services/service-2.jpg" alt="Generic placeholder image" width="140" height="140">
+              <h4>Video porters</h4>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-circle" src="images/services/service-3.jpg" alt="Generic placeholder image" width="140" height="140">
+              <h4>Climatitzaci&oacute;</h4>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-circle" src="images/services/service-4.jpg" alt="Generic placeholder image" width="140" height="140">
+              <h4>Calefacci&oacute;</h4>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-circle" src="images/services/service-5.jpg" alt="Generic placeholder image" width="140" height="140">
+              <h4>Electricitat</h4>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="img-circle" src="images/services/service-6.jpg" alt="Generic placeholder image" width="140" height="140">
+              <h4>Dom&ograve;tica</h4>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+          <div class="row">
+            <div class="col-lg-4 centered">
+              <img class="img-circle" src="images/services/service-7.jpg" alt="Generic placeholder image" width="140" height="140">
+              <h4>Aigua</h4>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 centered">
+              <img class="img-circle" src="images/services/service-8.jpg" alt="Generic placeholder image" width="140" height="140">
+              <h4>Gas</h4>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
     <section id="contacta">
-        <div class="container contacta">
+        <div class="jumbotron contacta">
+            <h1>Contacti amb nosaltres</h1>
+        </div>
+        <div class="container contacta">            
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h1>Contacti amb nosaltres</h1>
+                <div class="col-lg-8 col-lg-offset-2">                      
                     <p class="lead">Si us plau indiqui'ns les seves dades:</p>
                     <form id="contact-form" name="contact-form" method="post" role="form">
                         <div class="messages"></div>
